@@ -137,6 +137,11 @@ $(function () {
     $('#about').click(appRouter.about);
     $('#ratio').click(appRouter.rating);
     $('.task').eq(0).click();
-    $('#task').click(appRouter.task);
+    $('#task').click(function() {
+
+        appRouter.task();
+        $('.task').eq(0).click();
+
+    });
 
 });
